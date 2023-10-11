@@ -9,10 +9,30 @@
 /* Will be adding the roots for the variables to color and font */
 /* Media Q 320px */
 
+.dark-theme{
+    --main-bg-color: #737373;
+    --divs-bg-color: #231C69;
+    --font-main-color: #fff;
+    --meme-div-color: black;
+
+}
+
+.light-theme{
+    --main-bg-color: #fff;
+    --divs-bg-color: #F4D1FF;
+    --font-main-color: #844CA3;
+}
+
+body{
+    background-color: var(--main-bg-color);
+    color: var(--font-main-color);
+}
+
+
 header{
     width: 100%;
     height: 130px;
-    background-color: #231C69;
+    background-color: var(--divs-bg-color);
     box-shadow: 0 4px 5px rgb(55, 55, 55);
 }
 
@@ -20,7 +40,7 @@ header{
     text-align: center;
     line-height: 2rem;
     padding: 10px;
-    color: #fff;
+    color: var(--font-main-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -32,13 +52,42 @@ header{
 }
 
 .insert-picture, .inser-text, 
-.light-theme{
+.light-mode{
     text-align: center;
     display: flex;
     align-items: center;
     padding: 0 10px;
     border: 0;
     background-color: transparent;
-    color: #fff;
+    color: var(--font-main-color);
 }
 
+.meme-container{
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meme-gen{
+    width: 95%;
+    height: 400px;
+    padding: 10px 10px;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.picture{
+    height: 250px;
+    background-color: var(--meme-div-color);
+}
+
+.download{
+    background-color: var(--divs-bg-color);
+    border: 0;
+    height: 40px;
+    padding: 10px;
+    color: var(--font-main-color);
+    box-shadow: 0 4px 5px rgb(55, 55, 55);
+}
