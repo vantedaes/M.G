@@ -14,6 +14,7 @@
     --divs-bg-color: #231C69;
     --font-main-color: #fff;
     --meme-div-color: black;
+    --hover-darktheme-color: #844CA3;
 
 }
 
@@ -63,6 +64,14 @@ header{
     color: var(--font-main-color);
 }
 
+.insert-picture:hover, .inser-text:hover, 
+.light-mode:hover{
+    background-color: var(--hover-darktheme-color);
+    filter: brightness(120%);
+    border-radius: 3%;
+}
+
+
 .meme-container{
     height: 500px;
     display: flex;
@@ -98,8 +107,15 @@ header{
     border: 0;
     height: 40px;
     padding: 10px;
+    border-radius: 4%;
     color: var(--font-main-color);
     box-shadow: 0 4px 5px rgb(55, 55, 55);
+}
+
+.download:hover{
+    background-color: var(--hover-darktheme-color);
+    filter: brightness(120%);
+
 }
 
 
