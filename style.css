@@ -47,7 +47,7 @@ header{
 .buttons-container{
     height: 70px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -55,6 +55,7 @@ header{
 .light-mode{
     text-align: center;
     display: flex;
+    gap: 4px;
     align-items: center;
     padding: 0 10px;
     border: 0;
@@ -76,11 +77,19 @@ header{
     padding: 10px 10px;
     text-align: center;
     line-height: 2rem;
+    color: rgb(23, 23, 23);
+    font-size: 1.5rem;
+
 }
 
 .picture{
     height: 250px;
     background-color: var(--meme-div-color);
+}
+
+.top-text, .bottom-text{
+    padding: 10px;
+    background-color: #fff;
 }
 
 .download{
@@ -91,3 +100,50 @@ header{
     color: var(--font-main-color);
     box-shadow: 0 4px 5px rgb(55, 55, 55);
 }
+
+
+
+/* MEDIA QUERY  (480 px)*/
+
+@media ( min-width: 480px) {
+
+    .insert-picture, .inser-text, 
+    .light-mode{
+        font-size: 20px;
+     
+    }
+    
+    
+    .meme-container{
+        height: 620px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .meme-gen{
+        width: 95%;
+        height: 500px;
+        padding: 10px 10px;
+        text-align: center;
+        line-height: 2rem;
+    }
+    
+    .picture{
+        height: 400px;
+        background-color: var(--meme-div-color);
+    }
+    
+    .download{
+        background-color: var(--divs-bg-color);
+        border: 0;
+        height: 40px;
+        padding: 10px;
+        color: var(--font-main-color);
+        box-shadow: 0 4px 5px rgb(55, 55, 55);
+    }
+    
+}
+
+
