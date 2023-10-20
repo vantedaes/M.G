@@ -129,7 +129,8 @@
   .responsive-menu {
     width: 300px;
     height: 100vh;
-    border: 2px solid red;
+    background-color: var(--divs-bg-color);
+    box-shadow: 0 4px 5px rgb(55, 55, 55);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -142,10 +143,99 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center; 
+    display: none;
   }
 
+  .Picture-title{
+    text-shadow: rgb(63, 63, 63) 2px 2px;
+
+
+  }
+
+.url-container{
+  height: 90px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 10px;
+}
+
+.Url-input{
+  height: 30px;
+  background-color: var(--main-bg-color);
+  box-shadow: 0 4px 5px black;
+  border: solid var(--font-main-color) 2px;
+}
+
+.BG-sliders-Container{
+  width: 100%;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Background-title{
+  line-height: 35px;
+  font-size: 1.1rem;
+}
+
+.bg-options-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.color-input{
+  height: 35px;
+}
+
+.drop-down-options-menu{
+  height: 35px;
+  width: 100%;
+  box-shadow: 0 4px 5px rgb(0, 0, 0);
+}
+
+.filters-Container{
+  width: 100%;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Filters-title{
+  font-size: 1.1rem;
+  line-height: 20px;
+}
+
+.brightness-slier-container, .opacity-slier-container,
+.contrast-slier-container, .blur-slier-container,
+.grays-slier-container, .sepia-slier-container,
+.hue-slier-container, .saturation-slier-container, .negative-slier-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-reset-container{
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px;
+}
+
+.reset-button{
+  width: 50%;
+  height: 28px;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-family: var(--secondary-font);
+  color: var(--font-main-color);
+  background-color: var(--divs-bg-color);
+  box-shadow: 0 4px 5px rgb(0, 0, 0);
+  border: solid var(--font-main-color) 2px;
+}
 
 
 

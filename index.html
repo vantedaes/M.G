@@ -40,17 +40,17 @@
                 <!-- #### INPUT URL### -->
                 <div class="url-container">
                     <h3 class="url-title">URL</h3>
-                    <input type="url" name="url-pic" id="">
+                    <input type="url" name="url-pic" class="Url-input" id="">
                 </div>
                 <!-- ###BACKGROUND & OPTIONS##### -->
-                <div class="BG-Options-Container">
-                <h4 class="Background-Container">Background</h4>
-                <div class="Items-container">
+                <div class="BG-sliders-Container">
+                <h4 class="Background-title">Background</h4>
+                <div class="bg-options-container">
                     <div class="Background-Selector-Container">
-                        <input type="color" name="background-color" id="">
+                        <input type="color" name="background-color" class="color-input" id="">
                     </div>
                     <div class="options-selector-container">
-                        <select name="Options-menu" id="">
+                        <select name="Options-menu" class="drop-down-options-menu">
                             <option value="unset">None</option>
                             <option value="lighten">Clarify</option>
                             <option value="darken">Darken</option>
@@ -99,11 +99,69 @@
                         <label for="negative-slider">Negative</label>
                         <input type="range" min="0" max="1" value="1" step="0.1">
                     </div>
-                    <button class="reset">reset filters</button>
+                 </div>
+                 <div class="button-reset-container">
+                    <button class="reset-button">reset filters</button>
                 </div>
                 </div>
             </section>
-            </div>
+            <!-- ####TEXT PANNEL### -->
+            <section class="text-pannel">
+                <h2 class="Picture-title">Text</h2>
+                <div class="upper-tex-input-container">
+                    <h2 class="upper-tex-title">Upper text</h2>
+                    <input type="text" name="upper text" class="upper-text-input" id="">
+                    <div class="checkbox-upper-text">
+                        <input type="checkbox" name="no-upper-text-check" id="">
+                        <label for="no-upper-text-check">Without upper text</label>
+                    </div>
+                    </div>
+                    <div class="bottom-text-container">
+                        <h2 class="bottom-text-title">Bottom text</h2>
+                        <input t
+                        ype="text" name="bottom-text" class="bottom-text-input" id="">
+                        <div class="checkbox-botton-text">
+                            <input type="checkbox" name="no-upper-text-check" id="">
+                            <label for="" class="no-bottom-text-check">No bottom text</label>
+                        </div>
+                        </div>
+                        <div class="fonts-container">
+                            <h2 class="fonts-title">Fonts</h2>
+                            <select name="Font family" class="drop-down-fonts-menu" id="">
+                            <option value="Arial">Arial</option>
+                            <option value="Arial Black">Arial Black</option>
+                            <option value="American Typewriter">American Typewriter</option>
+                            <option value="Andale Mono">Andale Mono</option>
+                            <option value="Comic Sans MC">Comic Sans MC</option>
+                            <option value="Helvetica">Helvetica</option>
+                            <option value="Impact" selected>Impact</option>
+                            <option value="Verdana">Verdana</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                            </select>
+                            <div class="sizes-container">
+                                <input type="number" name="font-size" class="font-sizes" id="" min="12" value="40">
+                                <div class="alignment-buttons">
+                                    <button class="left-align-button">
+                                        <img src="./icons/text.align.left.icon.png" alt="left-align" width="20px">
+                                    </button>
+                                    <button class="justify-align-button">
+                                        <img src="./icons/text.aling.justify.icon.png" alt="text-justify" width="20px">
+                                    </button>
+                                    <button class="right-align-button">
+                                        <img src="./icons/text.aling.right.icon.png" alt="text-right" width="20px">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-color-inputs">
+                            <input type="color" name="" id="">
+                            <input type="color" name="" id="">
+
+
+
+                        </div>
+               </section>
+              </div>
             </section>
           </section>
         </aside>
