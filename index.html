@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous"></script>
     <title>Meme Generator Project</title>
 </head>
-<body class="dark-theme">
+<body>
 
     <!-- ##HEADER [NAVBAR] -->
     <header>
@@ -18,7 +18,7 @@
         <div class="buttons-container">
             <button class="insert-picture"><img src="./icons/picture.icon.png.png" alt="picture" width="25px">Picture</button>
             <button class="inser-text"><img src="./icons/text.icon.png.png" alt="text" width="25px">Text</button>
-            <button class="light-mode"><img src="./icons/sun.icon.png.png" alt="sun" width="25px">Dark mode</button>
+            <button class="light-mode"><img src="./icons/moon.icon.png.png" alt="sun" width="25px">Dark mode</button>
         </div>
     </header>
     <!-- ##STRUCTURE [MEME GENERATOR] -->
@@ -26,7 +26,7 @@
     <div class="meme-container">
         <div class="meme-maker-cont">
           <div class="meme-gen">
-            <p class="top-text">TOP TEXT</p>
+            <p class="top-text" id="top-text-id">TOP TEXT</p>
             <div class="picture"></div>
             <p class="bottom-text">BOTTOM TEXT</p>
           </div>
@@ -110,7 +110,7 @@
                 <h2 class="Text-title">Text</h2>
                 <div class="upper-tex-input-container">
                     <h2 class="upper-tex-title">Upper text</h2>
-                    <input type="text" name="upper text" class="upper-text-input" id="">
+                    <input type="text" name="upper text" class="upper-text-input" id="upper-text-input-id">
                     <div class="checkbox-upper-text">
                         <input type="checkbox" name="no-upper-text-check" id="">
                         <label for="no-upper-text-check">Without upper text</label>

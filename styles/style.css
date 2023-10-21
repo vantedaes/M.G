@@ -8,7 +8,7 @@
 /* #####NAVEGATION BAR#### */
 /* Media Q 320px */
 
-.dark-theme {
+body{
     --main-bg-color: #737373;
     --divs-bg-color: #231c69;
     --font-main-color: #fff;
@@ -16,12 +16,18 @@
     --hover-darktheme-color: #844ca3;
     --primery-font: Arial, Helvetica, sans-serif;
     --secondary-font: Verdana;
+    --transition-delay: 1s;
   }
   
-  .light-theme {
-    --main-bg-color: #fff;
+  body.light-theme {
+    --main-bg-color: #e08bff;
     --divs-bg-color: #f4d1ff;
     --font-main-color: #844ca3;
+    --meme-div-color: black;
+    --hover-lighttheme-color: #eaacde;
+    --primery-font: Arial, Helvetica, sans-serif;
+    --secondary-font: Verdana
+    --transition-delay: 1s;
   }
   
   body {
@@ -64,14 +70,17 @@
     border: 0;
     background-color: transparent;
     color: var(--font-main-color);
+    cursor: pointer;
+    transition: var(--transition-delay);
   }
   
   .insert-picture:hover,
+  .insert-picture:focus,
   .inser-text:hover,
-  .light-mode:hover {
-    background-color: var(--hover-darktheme-color);
-    filter: brightness(120%);
-    border-radius: 3%;
+  .inser-text:focus,
+  .light-mode:hover,
+  .light-mode:focus  {
+   transform: scale(1.3);
   }
   
   /* #####MEME GENERATOR##### */
@@ -121,7 +130,7 @@
   }
   
   .download:hover {
-    background-color: var(--hover-darktheme-color);
+    background-color: var(--hover-lighttheme-color);
     filter: brightness(120%);
   }
   
@@ -265,7 +274,7 @@
 
 .upper-text-input{
   height: 50px;
-  background-color: var(--main-bg-color);
+  background-color: var(--hover-lighttheme-color);
   box-shadow: 0 4px 5px black;
   border: solid var(--font-main-color) 2px;
 }
@@ -290,7 +299,7 @@
 
 .bottom-text-input{
   height: 30px;
-  background-color: var(--main-bg-color);
+  background-color: var(--hover-lighttheme-color);
   box-shadow: 0 4px 5px black;
   border: solid var(--font-main-color) 2px;
 }
@@ -388,7 +397,7 @@ display: block;
 
 .padding-input{
   height: 30px;
-  background-color: var(--main-bg-color);
+  background-color: var(--hover-lighttheme-color);
   box-shadow: 0 4px 5px black;
   border: solid var(--font-main-color) 2px;
 }
