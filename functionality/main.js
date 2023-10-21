@@ -8,15 +8,39 @@ document.querySelector('.light-mode').addEventListener('click', () => {
 
 // Form Values pratices :p 
 
-const upperTexts = document.getElementById('upper-text-input-id')
-const topTextmeme = document.getElementById('top-text-id')
+const $ = (selector) => document.querySelector(selector) 
 
-const textValue = () => {
-    topTextmeme.innerHTML = upperTexts.value 
-}
+$('#upper-text-input-id').addEventListener("input", (e) =>{
+    $('.top-text').innerText = e.target.value
+})
 
-upperTexts.addEventListener('input, texValue')
+$('#bottom-text-input-id').addEventListener('input', (e) => {
+    $('.bottom-text').innerText = e.target.value
+})
 
-// document.querySelector('.upper-text-input').addEventListener("input", (e) => {
-//      ('.top-text').innerText = e.target.value
+// swapping of responsive menu text to image 
 
+// // inser-text
+//insert-picture
+// picture-pannel
+//text-pannel
+
+$('.inser-text').addEventListener('click', (e) => {
+    if ($('.picture-pannel.style.display') !== 'none'){
+        $('.picture-pannel').style.display ='none'
+        $('.text-pannel').style.display ='block'
+    }else {
+        $('.picture-panel').style.display ='block'
+        $('.text-pannel').style.display ='none'
+    }
+})
+
+$('.insert-picture').addEventListener('click', (e) => {
+    if ($('.text-pannel.style.display') !== 'none'){
+        $('.text-pannel').style.display ='none'
+        $('.picture-pannel').style.display ='block'
+    }else {
+        $('.text-pannel').style.display ='block'
+        $('.picture-pannel').style.display ='none'
+    }
+})
