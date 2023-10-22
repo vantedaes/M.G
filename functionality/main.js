@@ -44,3 +44,16 @@ $('.insert-picture').addEventListener('click', (e) => {
         $('.picture-pannel').style.display ='none'
     }
 })
+
+
+// Input url 
+
+$('.url-input').addEventListener('input', (e) => {
+$('.meme-picture').style.backgroundImage = `url(${e.target.value})`
+})
+
+// background of picture 
+
+$('.picture-background-color-input').addEventListener('input', (e) =>{
+    $('.meme-picture').style.backgroundColor = e.target.value
+})

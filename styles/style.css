@@ -108,9 +108,13 @@ body{
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   }
   
-  .picture {
+  .meme-picture {
     height: 250px;
     background-color: var(--meme-div-color);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
   }
   
   .top-text,
@@ -171,11 +175,11 @@ body{
   padding: 10px 10px;
 }
 
-.Url-input{
+.url-input{
   height: 30px;
-  background-color: var(--main-bg-color);
+  background-color: var(--font-main-color);
   box-shadow: 0 4px 5px black;
-  border: solid var(--font-main-color) 2px;
+  border: solid var(--hover-darktheme-color) 2px;
 }
 
 .BG-sliders-Container{
@@ -457,7 +461,7 @@ display: block;
         height: 510px;
     }
     
-    .picture{
+    .meme-picture{
         height: 350px;
     }
     
@@ -495,7 +499,7 @@ display: block;
         font-size: 2.5rem;
     }
     
-    .picture{
+    .meme-picture{
         height: 420px;
     }
     
