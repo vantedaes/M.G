@@ -57,3 +57,61 @@ $('.meme-picture').style.backgroundImage = `url(${e.target.value})`
 $('.picture-background-color-input').addEventListener('input', (e) =>{
     $('.meme-picture').style.backgroundColor = e.target.value
 })
+
+
+// drop down menu, blend modes 
+
+ $('.drop-down-options-menu').addEventListener('input', (e) => {
+ $('.meme-picture').style.backgroundBlendMode = e.target.value
+ })
+
+ // Filters, sliders 
+
+ $('.brightness').addEventListener('input', (e) => {
+    $('.meme-picture').style.filter = `brightness(${e.target.value})`
+ })
+
+ $('.opacity').addEventListener('input', (e) => {
+    $('.meme-picture').style.filter = `opacity(${e.target.value})`
+ })
+
+ $('.contrast').addEventListener('input', (e) => {
+    $('.meme-picture').style.filter = `contrast(${e.target.value}%)`
+ })
+
+ $('.blur').addEventListener('input', (e) => {
+    $('.meme-picture').style.filter = `blur(${e.target.value}px)`
+ })
+
+ $('.grayscale').addEventListener('input', (e) => {
+    $('.meme-picture').style.filter = `grayscale(${e.target.value}%)`
+ })
+
+ $('.sepia').addEventListener('input', (e) => {
+    $('.meme-picture').style.filter = `sepia(${e.target.value}%)`
+ })
+
+ $('.hue-rotation').addEventListener('input', (e) => {
+    $('.meme-picture').style.filter = `hue-rotate(${e.target.value}deg)`
+ })
+
+ $('.saturation').addEventListener('input', (e) => {
+    $('.meme-picture').style.filter = `saturate(${e.target.value}%)`
+ })
+
+ $('.negative').addEventListener('input', (e) => {
+    $('.meme-picture').style.filter = `invert(${e.target.value})`
+ })
+
+ $(`.reset-button`).addEventListener('click', (e) => {
+    $('.meme-picture').style.filter = 'none'
+    $('.brightness').value = '1'
+    $('.opacity').value = '1'
+    $('.contrast').value = '100%'
+    $('.blur').value = '0px'
+    $('.grayscale').value = '0%'
+    $('.sepia').value ='0%'
+    $('.hue-rotation').value = '0deg'
+    $('.saturation').value = '100%'
+    $('.negative').value = '1'
+ })

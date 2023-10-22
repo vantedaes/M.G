@@ -53,7 +53,7 @@
                     <div class="options-selector-container">
                         <select name="Options-menu" class="drop-down-options-menu">
                             <option value="unset">None</option>
-                            <option value="lighten">Clarify</option>
+                            <option value="lighten">lighten</option>
                             <option value="darken">Darken</option>
                             <option value="difference">Difference</option>
                             <option value="luminosity">Luminosity</option>
@@ -66,39 +66,39 @@
                     <h5 class="Filters-title">Filters</h5>
                     <div class="brightness-slier-container">
                         <label for="brightness-slider">Brightness</label>
-                        <input type="range" min="0" max="1" value="1" step="0.1">
+                        <input type="range" class="brightness" min="0" max="1" value="1" step="0.1">
                     </div>
                     <div class="opacity-slier-container">
                         <label for="opacity-slider">Opacity</label>
-                        <input type="range" min="0" max="1" value="1" step="0.1">
+                        <input type="range" class="opacity" min="0" max="1" value="1" step="0.1">
                     </div>
                     <div class="contrast-slier-container">
                         <label for="Contrast-slider">Contrast</label>
-                        <input type="range" min="0" max="1" value="1" step="0.1">
+                        <input type="range" class="contrast" min="100%" max="1000%" value="100%" step="1%">
                     </div>
                     <div class="blur-slier-container">
                         <label for="blur-slider">Blur</label>
-                        <input type="range" min="0" max="1" value="1" step="0.1">
+                        <input type="range" class="blur" min="0" max="10" value="0.1" step="0">
                     </div>
                     <div class="grays-slier-container">
-                        <label for="grays-scale-slider">Grey Scale</label>
-                        <input type="range" min="0" max="1" value="1" step="0.1">
+                        <label for="grays-scale-slider">Gray Scale</label>
+                        <input type="range" class="grayscale"  min="0" max="100%" value="0%" step="1%">
                     </div>
                     <div class="sepia-slier-container">
                         <label for="sepia-slider">Sepia</label>
-                        <input type="range" min="0" max="1" value="1" step="0.1">
+                        <input type="range" class="sepia" min="0%" max="100%" value="0%" step="1000%">
                     </div>
                     <div class="hue-slier-container">
                         <label for="hue-slider">Hue</label>
-                        <input type="range" min="0" max="1" value="1" step="0.1">
+                        <input type="range" class="hue-rotation" min="0deg" max="395deg" value="0deg" step="1deg">
                     </div>
                     <div class="saturation-slier-container">
                         <label for="saturation-slider">Saturation</label>
-                        <input type="range" min="0" max="1" value="1" step="0.1">
+                        <input type="range" class="saturation" min="100%" max="1000%" value="100%" step="10%">
                     </div>
                     <div class="negative-slier-container">
                         <label for="negative-slider">Negative</label>
-                        <input type="range" min="0" max="1" value="1" step="0.1">
+                        <input type="range" class="negative" min="0" max="1" value="1" step="0.1">
                     </div>
                  </div>
                  <div class="button-reset-container">
