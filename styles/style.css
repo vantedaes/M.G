@@ -116,6 +116,7 @@ body{
     background-position: center;
   }
   
+  
   .top-text,
   .bottom-text {
     padding: 10px;
@@ -263,7 +264,7 @@ body{
 }
 
 .upper-tex-input-container{
-  height: 90px;
+  height: 150px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -276,7 +277,7 @@ body{
 }
 
 .upper-text-input{
-  height: 50px;
+  height: 30px;
   background-color: var(--font-main-color);
   box-shadow: 0 4px 5px black;
   border: solid var(--font-main-color) 2px;
@@ -288,7 +289,7 @@ body{
 }
 
 .bottom-text-container{
-  height: 90px;
+  height: 150px;
   width: 100%;
   display: flex;
   flex-direction: column;

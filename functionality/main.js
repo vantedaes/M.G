@@ -18,6 +18,39 @@ $('#bottom-text-input-id').addEventListener('input', (e) => {
     $('.bottom-text').innerText = e.target.value
 })
 
+
+//Checkboxes
+//no-upper-text  = > no upper text checkbox
+//no-bottom-text = > no-bottom-text
+
+  $('.no-upper-text').addEventListener('click', () => {
+    $('.top-text').style.visibility = "hidden"
+})
+
+$('.no-bottom-text').addEventListener('click', () => {
+    $('.bottom-text').style.visibility = "hidden"
+})
+
+
+// Fonts options
+
+$('.drop-down-fonts-menu').addEventListener('input', (e) => {
+    $('.top-text').style.fontFamily = e.target.value
+    })
+
+    $('.drop-down-fonts-menu').addEventListener('input', (e) => {
+        $('.bottom-text').style.fontFamily = e.target.value
+    })
+
+
+    // Fonts sizes 
+
+    // $('.font-sizes').addEventListener('input', (e) => {
+    //     $('.top-text').style.fontSize = e.target.value
+    // })
+
+
+
 // swapping of responsive menu text to image 
 
 // // inser-text
