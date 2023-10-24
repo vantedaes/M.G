@@ -45,9 +45,119 @@ $('.drop-down-fonts-menu').addEventListener('input', (e) => {
 
     // Fonts sizes 
 
-    // $('.font-sizes').addEventListener('input', (e) => {
-    //     $('.top-text').style.fontSize = e.target.value
-    // })
+     $('.font-sizes').addEventListener('input', (e) => {
+         $('.top-text').style.fontSize = `${e.target.value}px`
+     })
+
+     $('.font-sizes').addEventListener('input', (e) => {
+        $('.bottom-text').style.fontSize = `${e.target.value}px`
+    })
+
+    // Font color and font background color
+
+    $('.font-color').addEventListener('input', (e) => {
+        $('.top-text').style.color = e.target.value
+    })
+
+    $('.font-color').addEventListener('input', (e) => {
+        $('.bottom-text').style.color = e.target.value
+    })
+
+
+    // Text alignment =>  left-align-button, justify-align-button, 
+    //right-align-button
+
+    $('.left-align-button').addEventListener('click', (e) => {
+        $('.top-text').style.textAlign = 'left'
+    })
+
+    $('.left-align-button').addEventListener('click', (e) => {
+        $('.bottom-text').style.textAlign = 'left'
+    })
+
+    $('.justify-align-button').addEventListener('click', (e) => {
+        $('.top-text').style.textAlign = 'center'
+    })
+
+    $('.justify-align-button').addEventListener('click', (e) => {
+        $('.bottom-text').style.textAlign = 'center'
+    })
+
+    $('.right-align-button').addEventListener('click', (e) => {
+        $('.top-text').style.textAlign = 'right'
+    })
+
+    $('.right-align-button').addEventListener('click', (e) => {
+        $('.bottom-text').style.textAlign = 'right'
+    })
+
+
+    // font backgrounColor
+
+    $('.background-text-color').addEventListener('input', (e) => {
+        $('.top-text').style.backgroundColor = e.target.value
+    })
+
+    $('.background-text-color').addEventListener('input', (e) => {
+        $('.bottom-text').style.backgroundColor = e.target.value
+    })
+
+    // no background checkbox
+
+    $('.clear-background').addEventListener('click', (e) => {
+        $('.top-text').style.backgroundColor = "transparent"
+    })
+
+    $('.clear-background').addEventListener('click', (e) => {
+        $('.bottom-text').style.backgroundColor = "transparent"
+    })
+
+    // Fonts outline => light
+
+    $('.light-outline-button').addEventListener('click', (e) => {
+        $('.bottom-text').style.webkitTextStroke = '1px white'
+    })
+
+    $('.light-outline-button').addEventListener('click', (e) => {
+        $('.top-text').style.webkitTextStroke = '1px white'
+    })
+
+    // Font outline => Dark
+
+    $('.dark-outline-button').addEventListener('click', (e) => {
+        $('.bottom-text').style.webkitTextStroke = '1px black'
+    })
+
+    $('.dark-outline-button').addEventListener('click', (e) => {
+        $('.top-text').style.webkitTextStroke = '1px black'
+    })
+
+    // None outline
+
+     $('.None-outline-button').addEventListener('click', (e) => {
+        $('.top-text').style.webkitTextStroke = '0'
+    })
+
+    $('.None-outline-button').addEventListener('click', (e) => {
+        $('.bottom-text').style.webkitTextStroke = '0'
+    })
+
+
+    // Fonts padding 
+
+     $('.padding-input').addEventListener('input', (e) => {
+         $('.top-text').style.padding = `${e.target.value}px`
+     })
+
+     $('.padding-input').addEventListener('input', (e) => {
+        $('.bottom-text').style.padding = `${e.target.value}px`
+    })
+
+   // Line Height
+
+   $('.line-spacing').addEventListener('input', (e) => {
+    $('.top-text').style.lineHeight = e.target.value
+   })
 
 
 
@@ -77,7 +187,6 @@ $('.insert-picture').addEventListener('click', (e) => {
         $('.picture-pannel').style.display ='none'
     }
 })
-
 
 // Input url 
 

@@ -119,15 +119,18 @@ body{
   
   .top-text,
   .bottom-text {
-    padding: 10px;
+    padding: 30px;
     background-color: #fff;
   }
   
   .download {
     background-color: var(--divs-bg-color);
     border: 0;
+    width: 50%;
+    align-self: center;
     height: 40px;
     padding: 10px;
+    margin-top: 100px;
     border-radius: 4%;
     color: var(--font-main-color);
     box-shadow: 0 4px 5px rgb(55, 55, 55);
@@ -406,7 +409,7 @@ display: block;
   border: solid var(--font-main-color) 2px;
 }
 
-.contour-container{
+.line-spacing-container{
   height: 50px;
   width: 100%;
   display: flex;
@@ -415,11 +418,11 @@ display: block;
   padding: 10px 10px
 }
 
-.contour-title{
+.line-spacing-title{
   font-size: 1rem;
 }
 
-.contour-options{
+.line-spacing{
   box-shadow: 0 4px 5px black;
   border: solid var(--font-main-color) 2px;
   padding: 5px 5px;
