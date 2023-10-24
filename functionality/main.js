@@ -178,6 +178,10 @@ $('.inser-text').addEventListener('click', (e) => {
     }
 })
 
+$('.inser-text').addEventListener('click', (e) => {
+    $('.responsive-menu').style.display = 'block'
+})
+
 $('.insert-picture').addEventListener('click', (e) => {
     if ($('.text-pannel.style.display') !== 'none'){
         $('.text-pannel').style.display ='none'
@@ -187,6 +191,25 @@ $('.insert-picture').addEventListener('click', (e) => {
         $('.picture-pannel').style.display ='none'
     }
 })
+
+$('.insert-picture').addEventListener('click', (e) => {
+   if ($('.responsive-menu').style.display = 'block') {
+    $('.meme-maker-cont').style.display = 'none'
+   }
+})
+
+//MQ 320, 480, 768 Responsive Menu
+
+
+
+
+
+
+
+
+
+
+
 
 // Input url 
 
