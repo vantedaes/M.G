@@ -63,8 +63,9 @@ body{
   .inser-text,
   .light-mode {
     text-align: center;
+    font-size: 0.7rem;
     display: flex;
-    gap: 4px;
+    gap: 3px;
     align-items: center;
     padding: 0 10px;
     border: 0;
@@ -93,14 +94,14 @@ body{
   }
   
   .meme-maker-cont{
-    width: 50%;
+    width: 90%;
     height: 100%;
     justify-content: center;
-    /* max-width: 610px; */
+    max-width: 610px;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    padding: 10px 10px;
+    padding: 5px 5px;
     text-align: center;
     line-height: 2rem;
     color: rgb(23, 23, 23);
@@ -110,7 +111,7 @@ body{
   }
   
   .meme-picture {
-    height: 250px;
+    height: 200px;
     background-color: var(--meme-div-color);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -120,7 +121,7 @@ body{
   
   .top-text,
   .bottom-text {
-    padding: 30px;
+    padding: 15px;
     background-color: #fff;
   }
   
@@ -131,7 +132,7 @@ body{
     align-self: center;
     height: 40px;
     padding: 10px;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 4%;
     color: var(--font-main-color);
     box-shadow: 0 4px 5px rgb(55, 55, 55);
@@ -164,6 +165,10 @@ body{
     align-items: center; 
     display: block;
   }
+
+.responsive-menu:focus{
+  display: block;
+}
 
   .Picture-title{
     text-shadow: rgb(63, 63, 63) 2px 2px;
