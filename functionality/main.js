@@ -211,18 +211,6 @@ $('.close-icon').addEventListener('click', (e) => {
 })
 
 
-//MQ 320, 480, 768 Responsive Menu
-
-
-
-
-
-
-
-
-
-
-
 
 // Input url 
 
