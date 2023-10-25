@@ -306,7 +306,7 @@ text-shadow: rgb(63, 63, 63) 2px 2px;
 }
 
 .upper-tex-input-container{
-height: 150px;
+height: 100px;
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -315,23 +315,23 @@ padding: 10px 10px;
 }
 
 .upper-tex-title{
-font-size: 1rem;
+font-size: 0.8rem;
 }
 
 .upper-text-input{
-height: 30px;
+height: 25px;
 background-color: var(--font-main-color);
 box-shadow: 0 4px 5px black;
 border: solid var(--font-main-color) 2px;
 }
 
 .checkbox-upper-text{
-font-size: 0.8rem;
+font-size: 0.7rem;
 margin-top: 5px;
 }
 
 .bottom-text-container{
-height: 150px;
+height: 100px;
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -340,18 +340,22 @@ padding: 10px 10px
 }
 
 .bottom-text-title{
-font-size: 1rem;
+font-size: 0.8rem;
 }
 
 .bottom-text-input{
-height: 30px;
+height: 25px;
 background-color: var(--font-main-color);
 box-shadow: 0 4px 5px black;
 border: solid var(--font-main-color) 2px;
 }
 
+.checkbox-botton-text{
+  font-size: 0.6rem;
+}
+
 .fonts-container{
-height: 130px;
+height: 120px;
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -360,12 +364,12 @@ padding: 10px 10px
 }
 
 .fonts-title{
-font-size: 1rem;
+font-size: 0.8rem;
 }
 
 .drop-down-fonts-menu{
 box-shadow: 0 4px 5px black;
-border: solid var(--font-main-color) 2px;
+border: none;
 padding: 5px 5px;
 }
 
@@ -391,15 +395,19 @@ border-radius: 15%;
 }
 
 .bg-color-inputs{
-width: 50%;
+width: 100%;
 height: 40px;
 display: flex;
 align-items: center;
 justify-content: space-between;
 }
 
+.color-font, .color-font-bg{
+  font-size: 0.6rem;
+}
+
 .clear-bg-checkbox-container{
-font-size: 0.8rem;
+font-size: 0.6rem;
 }
 
 .outline-container{
@@ -412,7 +420,7 @@ padding: 10px 10px
 }
 
 .outline-title{
-font-size: 1rem;
+font-size: 0.8rem;
 }
 
 .buttons-outline-container{
@@ -425,7 +433,7 @@ justify-content: space-evenly;
 width: 85px;
 height: 30px;
 border-radius: 10%;
-font-size: 1rem;
+font-size: 0.7rem;
 }
 
 .padding-container{
@@ -438,7 +446,7 @@ padding: 10px 10px
 }
 
 .padding-title{
-font-size: 1rem;
+font-size: 0.8rem;
 }
 
 .padding-input{
@@ -458,7 +466,7 @@ padding: 10px 10px
 }
 
 .line-spacing-title{
-font-size: 1rem;
+font-size: 0.8rem;
 }
 
 .line-spacing{
@@ -692,8 +700,7 @@ padding: 5px 5px;
       padding: 10px;
       font-family: var(--secondary-font);
       line-height: 30px;
-      display: block;
-      width: unset;
+      display: block !important;
       position: fixed;
       right: 0;
       top: 0;

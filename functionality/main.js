@@ -281,3 +281,13 @@ $('.picture-background-color-input').addEventListener('input', (e) =>{
     $('.saturation').value = '100%'
     $('.negative').value = '1'
  })
+
+ //  Download Meme 
+
+ const downloadMeme = () => {
+    domtoimage.toBlob($(".meme-gen")).then((blob) => {
+        saveAs(blob, "my-meme.png")
+  })
+  }
+
+ $('.download').addEventListener('click', downloadMeme)
