@@ -1,7 +1,7 @@
 *{
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
 
@@ -9,361 +9,361 @@
 /* Media Q 320px */
 
 body{
-    --main-bg-color: #737373;
-    --divs-bg-color: #231c69;
-    --font-main-color: #fff;
-    --meme-div-color: black;
-    --hover-darktheme-color: #844ca3;
-    --primery-font: Arial, Helvetica, sans-serif;
-    --secondary-font: Verdana;
-    --transition-delay: 1s;
-  }
-  
-  body.light-theme {
-    --main-bg-color: #e08bff;
-    --divs-bg-color: #f4d1ff;
-    --font-main-color: #844ca3;
-    --meme-div-color: black;
-    --hover-lighttheme-color: #eaacde;
-    --primery-font: Arial, Helvetica, sans-serif;
-    --secondary-font: Verdana;
-    --transition-delay: 1s;
-  }
-  
-  body {
-    background-color: var(--main-bg-color);
-    color: var(--font-main-color);
-  }
-  
-  header {
-    width: 100%;
-    height: 100px;
-    background-color: var(--divs-bg-color);
-    box-shadow: 0 4px 5px rgb(55, 55, 55);
-  }
-  
-  .title {
-    text-align: center;
-    line-height: 2rem;
-    padding: 10px;
-    color: var(--font-main-color);
-    font-family: var(--primery-font)
-  }
-  
-  .buttons-container {
-    height: 60px;
-    /* width: 50%; */
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .insert-picture,
-  .inser-text,
-  .light-mode {
-    text-align: center;
-    font-size: 0.7rem;
-    display: flex;
-    gap: 3px;
-    align-items: center;
-    padding: 0 10px;
-    border: 0;
-    background-color: transparent;
-    color: var(--font-main-color);
-    cursor: pointer;
-    transition: var(--transition-delay);
-  }
-  
-  .insert-picture:hover,
-  .insert-picture:focus,
-  .inser-text:hover,
-  .inser-text:focus,
-  .light-mode:hover,
-  .light-mode:focus  {
-   transform: scale(1.3);
-  }
-  
-  /* #####MEME GENERATOR##### */
-  
-  .meme-container {
-    width: 100%;
-    margin-right: 200px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .meme-maker-cont{
-    width: 90%;
-    height: 100%;
-    justify-content: center;
-    max-width: 610px;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    padding: 5px 5px;
-    text-align: center;
-    line-height: 2rem;
-    color: rgb(23, 23, 23);
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  }
-  
-  .meme-picture {
-    height: 200px;
-    background-color: var(--meme-div-color);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  
-  .top-text,
-  .bottom-text {
-    padding: 15px;
-    background-color: #fff;
-  }
-  
-  .download {
-    background-color: var(--divs-bg-color);
-    border: 0;
-    width: 50%;
-    align-self: center;
-    height: 40px;
-    padding: 10px;
-    margin-top: 50px;
-    border-radius: 4%;
-    color: var(--font-main-color);
-    box-shadow: 0 4px 5px rgb(55, 55, 55);
-  }
-  
-  .download:hover {
-    background-color: var(--hover-lighttheme-color);
-    filter: brightness(120%);
-  }
-  
-  
-  .responsive-menu {
-    width: 100%;
-    height: 150vh;
-    background-color: var(--divs-bg-color);
-    box-shadow: 0 4px 5px rgb(55, 55, 55);
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    font-family: var(--secondary-font);
-    line-height: 30px;
-    display: none;
-  }
+  --main-bg-color: #737373;
+  --divs-bg-color: #231c69;
+  --font-main-color: #fff;
+  --meme-div-color: black;
+  --hover-darktheme-color: #844ca3;
+  --primery-font: Arial, Helvetica, sans-serif;
+  --secondary-font: Verdana;
+  --transition-delay: 1s;
+}
 
-  .picture-pannel{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    display: block;
-  }
+body.light-theme {
+  --main-bg-color: #e08bff;
+  --divs-bg-color: #f4d1ff;
+  --font-main-color: #844ca3;
+  --meme-div-color: black;
+  --hover-lighttheme-color: #eaacde;
+  --primery-font: Arial, Helvetica, sans-serif;
+  --secondary-font: Verdana;
+  --transition-delay: 1s;
+}
 
-.responsive-menu:focus{
+body {
+  background-color: var(--main-bg-color);
+  color: var(--font-main-color);
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: var(--divs-bg-color);
+  box-shadow: 0 4px 5px rgb(55, 55, 55);
+}
+
+.title {
+  text-align: center;
+  line-height: 2rem;
+  padding: 10px;
+  color: var(--font-main-color);
+  font-family: var(--primery-font)
+}
+
+.buttons-container {
+  height: 60px;
+  /* width: 50%; */
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insert-picture,
+.inser-text,
+.light-mode {
+  text-align: center;
+  font-size: 0.7rem;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  padding: 0 10px;
+  border: 0;
+  background-color: transparent;
+  color: var(--font-main-color);
+  cursor: pointer;
+  transition: var(--transition-delay);
+}
+
+.insert-picture:hover,
+.insert-picture:focus,
+.inser-text:hover,
+.inser-text:focus,
+.light-mode:hover,
+.light-mode:focus  {
+ transform: scale(1.3);
+}
+
+/* #####MEME GENERATOR##### */
+
+.meme-container {
+  width: 100%;
+  margin-right: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.meme-maker-cont{
+  width: 90%;
+  height: 100%;
+  justify-content: center;
+  max-width: 610px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px;
+  text-align: center;
+  line-height: 2rem;
+  color: rgb(23, 23, 23);
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.meme-picture {
+  height: 200px;
+  background-color: var(--meme-div-color);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.top-text,
+.bottom-text {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.download {
+  background-color: var(--divs-bg-color);
+  border: 0;
+  width: 50%;
+  align-self: center;
+  height: 40px;
+  padding: 10px;
+  margin-top: 50px;
+  border-radius: 4%;
+  color: var(--font-main-color);
+  box-shadow: 0 4px 5px rgb(55, 55, 55);
+}
+
+.download:hover {
+  background-color: var(--hover-lighttheme-color);
+  filter: brightness(120%);
+}
+
+
+.responsive-menu {
+  
+  height: 150vh;
+  background-color: var(--divs-bg-color);
+  box-shadow: 0 4px 5px rgb(55, 55, 55);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--secondary-font);
+  line-height: 30px;
+  display: none;
+}
+
+.picture-pannel{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
   display: block;
 }
 
-  .Picture-title{
-    text-shadow: rgb(63, 63, 63) 2px 2px;
-  }
+.responsive-menu:focus{
+display: block;
+}
+
+.Picture-title{
+  text-shadow: rgb(63, 63, 63) 2px 2px;
+}
 
 .url-container{
-  height: 90px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px 10px;
+height: 90px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 10px 10px;
 }
 
 .url-input{
-  height: 30px;
-  background-color: var(--font-main-color);
-  box-shadow: 0 4px 5px black;
-  border: solid var(--hover-darktheme-color) 2px;
+height: 30px;
+background-color: var(--font-main-color);
+box-shadow: 0 4px 5px black;
+border: solid var(--hover-darktheme-color) 2px;
 }
 
 .BG-sliders-Container{
-  width: 100%;
-  padding: 10px 10px;
-  display: flex;
-  flex-direction: column;
+width: 100%;
+padding: 10px 10px;
+display: flex;
+flex-direction: column;
 }
 
 .Background-title{
-  line-height: 35px;
-  font-size: 1.1rem;
+line-height: 35px;
+font-size: 1.1rem;
 }
 
 .bg-options-container{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+width: 100%;
+display: flex;
+justify-content: space-around;
 }
 
 .Background-Selector-Container{
-  width: 50%;
-  /* padding: 10px; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 15px;
+width: 50%;
+/* padding: 10px; */
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 15px;
 }
 
 .label-picture-bg{
-  font-size: 0.7rem;
+font-size: 0.7rem;
 }
 
 .options-selector-container{
-  width: 50%;
-  /* padding: 10px; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+width: 50%;
+/* padding: 10px; */
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .blend-modes-title{
-  font-size: 0.7rem;
+font-size: 0.7rem;
 }
 
 .drop-down-options-menu{
-  height: 35px;
-  width: 100%;
-  border: none;
-  background-color: transparent;
-  color: var(--font-main-color);
-  box-shadow: 0 4px 5px rgb(0, 0, 0);
+height: 35px;
+width: 100%;
+border: none;
+background-color: transparent;
+color: var(--font-main-color);
+box-shadow: 0 4px 5px rgb(0, 0, 0);
 }
 
 .filters-Container{
-  width: 100%;
-  line-height: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+width: 100%;
+line-height: 40px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
 }
 
 .Filters-title{
-  font-size: 1.1rem;
-  line-height: 20px;
+font-size: 1.1rem;
+line-height: 20px;
 }
 
 .brightness-slier-container, .opacity-slier-container,
 .contrast-slier-container, .blur-slier-container,
 .grays-slier-container, .sepia-slier-container,
 .hue-slier-container, .saturation-slier-container, .negative-slier-container{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+width: 100%;
+display: flex;
+flex-direction: column;
 }
 
 .button-reset-container{
-  display: flex;
-  height: 100px;
-  align-items: center;
-  padding: 10px 10px 10px;
+display: flex;
+height: 100px;
+align-items: center;
+padding: 10px 10px 10px;
 }
 
 .reset-button{
-  width: 50%;
-  height: 50px;
-  margin-top: 10px;
-  font-size: 1rem;
-  font-family: var(--secondary-font);
-  color: var(--font-main-color);
-  background-color: var(--hover-lighttheme-color);
-  box-shadow: 0 4px 5px rgb(0, 0, 0);
-  cursor: pointer;
+width: 50%;
+height: 50px;
+margin-top: 10px;
+font-size: 1rem;
+font-family: var(--secondary-font);
+color: var(--font-main-color);
+background-color: var(--hover-lighttheme-color);
+box-shadow: 0 4px 5px rgb(0, 0, 0);
+cursor: pointer;
 }
 
 .text-pannel{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  display: none;
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center; 
+display: none;
 }
 
 .Text-title{
-  text-shadow: rgb(63, 63, 63) 2px 2px;
+text-shadow: rgb(63, 63, 63) 2px 2px;
 }
 
 .upper-tex-input-container{
-  height: 150px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px 10px;
+height: 150px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 10px 10px;
 }
 
 .upper-tex-title{
-  font-size: 1rem;
+font-size: 1rem;
 }
 
 .upper-text-input{
-  height: 30px;
-  background-color: var(--font-main-color);
-  box-shadow: 0 4px 5px black;
-  border: solid var(--font-main-color) 2px;
+height: 30px;
+background-color: var(--font-main-color);
+box-shadow: 0 4px 5px black;
+border: solid var(--font-main-color) 2px;
 }
 
 .checkbox-upper-text{
-  font-size: 0.8rem;
-  margin-top: 5px;
+font-size: 0.8rem;
+margin-top: 5px;
 }
 
 .bottom-text-container{
-  height: 150px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px 10px
+height: 150px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 10px 10px
 }
 
 .bottom-text-title{
-  font-size: 1rem;
+font-size: 1rem;
 }
 
 .bottom-text-input{
-  height: 30px;
-  background-color: var(--font-main-color);
-  box-shadow: 0 4px 5px black;
-  border: solid var(--font-main-color) 2px;
+height: 30px;
+background-color: var(--font-main-color);
+box-shadow: 0 4px 5px black;
+border: solid var(--font-main-color) 2px;
 }
 
 .fonts-container{
-  height: 130px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px 10px
+height: 130px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 10px 10px
 }
 
 .fonts-title{
-  font-size: 1rem;
+font-size: 1rem;
 }
 
 .drop-down-fonts-menu{
-  box-shadow: 0 4px 5px black;
-  border: solid var(--font-main-color) 2px;
-  padding: 5px 5px;
+box-shadow: 0 4px 5px black;
+border: solid var(--font-main-color) 2px;
+padding: 5px 5px;
 }
 
 .sizes-container{
-  margin-top: 7px;
-  display: flex;
-  align-items: center;
+margin-top: 7px;
+display: flex;
+align-items: center;
 }
 
 .font-sizes{
@@ -373,173 +373,260 @@ display: block;
 }
 
 .alignment-buttons{
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 10px;
-  gap: 10px;
-  padding: 0%;
-  border-radius: 15%;
+display: flex;
+flex-wrap: wrap;
+margin-left: 10px;
+gap: 10px;
+padding: 0%;
+border-radius: 15%;
 }
 
 .bg-color-inputs{
- width: 50%;
- height: 40px;
- display: flex;
- align-items: center;
- justify-content: space-between;
+width: 50%;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 
 .clear-bg-checkbox-container{
-  font-size: 0.8rem;
+font-size: 0.8rem;
 }
 
 .outline-container{
-  height: 30px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px 10px
+height: 30px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 10px 10px
 }
 
 .outline-title{
-  font-size: 1rem;
+font-size: 1rem;
 }
 
 .buttons-outline-container{
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
+width: 100%;
+display: flex;
+justify-content: space-evenly;
 }
 
 .None-outline-button, .light-outline-button, .dark-outline-button{
-  width: 85px;
-  height: 30px;
-  border-radius: 10%;
-  font-size: 1rem;
+width: 85px;
+height: 30px;
+border-radius: 10%;
+font-size: 1rem;
 }
 
 .padding-container{
-  height: 90px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px 10px
+height: 90px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 10px 10px
 }
 
 .padding-title{
-  font-size: 1rem;
+font-size: 1rem;
 }
 
 .padding-input{
-  height: 30px;
-  background-color: var(--font-main-color);
-  box-shadow: 0 4px 5px black;
-  border: solid var(--font-main-color) 2px;
+height: 30px;
+background-color: var(--font-main-color);
+box-shadow: 0 4px 5px black;
+border: solid var(--font-main-color) 2px;
 }
 
 .line-spacing-container{
-  height: 50px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px 10px
+height: 50px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 10px 10px
 }
 
 .line-spacing-title{
-  font-size: 1rem;
+font-size: 1rem;
 }
 
 .line-spacing{
-  box-shadow: 0 4px 5px black;
-  border: solid var(--font-main-color) 2px;
-  padding: 5px 5px;
+box-shadow: 0 4px 5px black;
+border: solid var(--font-main-color) 2px;
+padding: 5px 5px;
 }
 
 /* ###MEDIAS QUERY##### */
 
 
 /* MEDIA QUERY  (480 px)*/
+@media ( max-width: 480px) {
+
+  header{
+      height: 100px;
+  }
+
+  .title{
+      font-size: 2rem;
+  }
+
+  .buttons-container{
+      height: 60px;
+      display: flex;
+      align-items: center;
+  }
+
+
+  .insert-picture, .inser-text, 
+  .light-mode{
+      font-size: 13px;
+   
+  }
+
+  .meme-container{
+      height: 540px;
+  }
+  
+  .meme-gen{
+      height: 510px;
+  }
+  
+  .meme-picture{
+      height: 350px;
+  }
+  
+  .download{
+      height: 60px;
+      font-size: 1rem;
+  }
+  .responsive-menu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+  .close-icon{
+    display: block;
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: white;
+  }
+  
+}
 
 @media ( min-width: 480px) {
 
-    header{
-        height: 100px;
-    }
+  header{
+      height: 100px;
+  }
 
-    .title{
-        font-size: 2rem;
-    }
+  .title{
+      font-size: 2rem;
+  }
 
-    .buttons-container{
-        height: 60px;
-        display: flex;
-        align-items: center;
-    }
+  .buttons-container{
+      height: 60px;
+      display: flex;
+      align-items: center;
+  }
 
 
-    .insert-picture, .inser-text, 
-    .light-mode{
-        font-size: 13px;
-     
-    }
+  .insert-picture, .inser-text, 
+  .light-mode{
+      font-size: 13px;
+   
+  }
 
-    .meme-container{
-        height: 540px;
-    }
-    
-    .meme-gen{
-        height: 510px;
-    }
-    
-    .meme-picture{
-        height: 350px;
-    }
-    
-    .download{
-        height: 60px;
-        font-size: 1rem;
-    }
-    
+  .meme-container{
+      height: 540px;
+  }
+  
+  .meme-gen{
+      height: 510px;
+  }
+  
+  .meme-picture{
+      height: 350px;
+  }
+  
+  .download{
+      height: 60px;
+      font-size: 1rem;
+  }
+  .responsive-menu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+  .close-icon{
+    display: block;
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: white;
+  }
+  
 }
 
 /* Media Q 768 */
 
 
 @media ( min-width: 768px){
-    header{
-        height: 130px;
-    }
+  header{
+      height: 130px;
+  }
 
-    .title{
-        font-size: 2.5rem;
-    }
+  .title{
+      font-size: 2.5rem;
+  }
 
-    .insert-picture, .inser-text, 
-    .light-mode{
-        font-size: 18px;
-     
-    }
+  .insert-picture, .inser-text, 
+  .light-mode{
+      font-size: 18px;
+   
+  }
 
-    .meme-container{
-        height: 700px;
-    }
-    
-    .meme-gen{
-        height: 550px;
-        font-size: 2.5rem;
-    }
-    
-    .meme-picture{
-        height: 420px;
-    }
-    
-    .download{
-        height: 75px;
-        font-size: 1.3rem;
-    }
+  .meme-container{
+      height: 700px;
+  }
+  
+  .meme-gen{
+      height: 550px;
+      font-size: 2.5rem;
+  }
+  
+  .meme-picture{
+      height: 420px;
+  }
+  
+  .download{
+      height: 75px;
+      font-size: 1.3rem;
+  }
+
+  .responsive-menu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+  .close-icon{
+    display: block;
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: white;
+  }
 
 }
 
@@ -547,62 +634,66 @@ display: block;
 
 @media ( min-width: 1024px){
 
-    .title{
-        font-size: 3rem;
-        line-height: 3rem;
-    }
-    .meme-maker-cont{
-      width: 50%;
-      height: 100%;
-      justify-content: center;
-      /* max-width: 610px; */
-      margin-right: 100px;
-      display: flex;
-      flex-direction: column;
-      padding: 10px 10px;
-      text-align: center;
-      line-height: 2rem;
-      color: rgb(23, 23, 23);
-      font-size: 1.5rem;
-      font-weight: bold;
-      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    }
+  .title{
+      font-size: 3rem;
+      line-height: 3rem;
+  }
+  .meme-maker-cont{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    /* max-width: 610px; */
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    text-align: center;
+    line-height: 2rem;
+    color: rgb(23, 23, 23);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
 
-    .meme-container{
-        height: 620px;
-        width: 100%;
-        margin-left: 10px;
-        justify-content: flex-end;
-    }
-    
-    .meme-gen{
-        font-size: 2.5rem;
-        padding: 20px;
-    }
+  .meme-container{
+      height: 620px;
+      width: 100%;
+      margin-left: 10px;
+      justify-content: flex-end;
+  }
+  
+  .meme-gen{
+      font-size: 2.5rem;
+      padding: 20px;
+  }
 
-    .meme-picture{
-      height: 300px;
-    }
+  .meme-picture{
+    height: 300px;
+  }
 
-    .download{
-        height: 50px;
-        font-size: 1.3rem;
-        margin-top: 30px;
+  .download{
+      height: 50px;
+      font-size: 1.3rem;
+      margin-top: 30px;
 } 
 
-     .responsive-menu {
-        float: right;
-        background-color: var(--divs-bg-color);
-        box-shadow: 0 4px 5px rgb(55, 55, 55);
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        font-family: var(--secondary-font);
-        line-height: 30px;
-        display: block;
+   .responsive-menu {
+      float: right;
+      background-color: var(--divs-bg-color);
+      box-shadow: 0 4px 5px rgb(55, 55, 55);
+      padding: 10px;
+      font-family: var(--secondary-font);
+      line-height: 30px;
+      display: block;
+      width: unset;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 360px;
+}
+
+.close-icon{
+display: none;
 }
 
 }
-
-
-

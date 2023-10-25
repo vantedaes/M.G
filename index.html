@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <script src="./functionality/main.js" defer></script>
     <!-- Download img script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous"></script>
@@ -37,7 +36,9 @@
 
       <!-- ###PICTURE RESPONSIVE MENU### -->
         <aside class="responsive-menu">
-            <i class="icons fi fi-br-cross"></i>
+            <div class="close-menu-button">
+                <button class="Close-menu"><img src="./icons/close.icon.png.png"  width="10px" height="10px" alt="Close-icon"></button>
+            </div>
             <section class="picture-pannel">
                 <h2 class="Picture-title">Picture</h2>
                 <!-- #### INPUT URL### -->
@@ -159,7 +160,10 @@
                         </div>
                         <div class="bg-color-inputs">
                             <input type="color" name="font-color" class="font-color" id="font-color-id">
-                            <input type="color" name="background-text-color" class="background-text-color" id="background-text-color-id">
+                            <label for="font-color">Color</label>
+                            <input type="color" 
+                            name="background-text-color" class="background-text-color" id="background-text-color-id">
+                            <label for="background-Font-colors">Background</label>
                         </div>  
                          <div class="clear-bg-checkbox-container">
                          <input type="checkbox" name="clear-background" class="clear-background" id="clear-background-id">

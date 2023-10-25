@@ -168,7 +168,16 @@ $('.drop-down-fonts-menu').addEventListener('input', (e) => {
 // picture-pannel
 //text-pannel
 
+
+// swapping of responsive menu text to image 
+
+// // inser-text
+//insert-picture
+// picture-pannel
+//text-pannel
+
 $('.inser-text').addEventListener('click', (e) => {
+    $('.responsive-menu').style.display = 'block'
     if ($('.picture-pannel.style.display') !== 'none'){
         $('.picture-pannel').style.display ='none'
         $('.text-pannel').style.display ='block'
@@ -178,25 +187,29 @@ $('.inser-text').addEventListener('click', (e) => {
     }
 })
 
-$('.inser-text').addEventListener('click', (e) => {
-    $('.responsive-menu').style.display = 'block'
-})
 
 $('.insert-picture').addEventListener('click', (e) => {
-    if ($('.text-pannel.style.display') !== 'none'){
+    $('.responsive-menu').style.display = 'block'
+    if ($('.text-pannel.style.display') !== 'none') {
         $('.text-pannel').style.display ='none'
         $('.picture-pannel').style.display ='block'
-    }else {
-        $('.text-pannel').style.display ='block'
-        $('.picture-pannel').style.display ='none'
     }
 })
 
-$('.insert-picture').addEventListener('click', (e) => {
-   if ($('.responsive-menu').style.display = 'block') {
-    $('.meme-maker-cont').style.display = 'none'
-   }
+
+//MQ 320, 480, 768 Responsive Menu
+
+
+
+//CLOSE BUTTON 
+
+$('.close-icon').addEventListener('click', (e) => {
+    if ($('.text-pannel.style.display') !== 'none' || $('.picture-pannel.style.display') !== 'none') {
+     
+        $('.responsive-menu').style.display ='none'
+    }
 })
+
 
 //MQ 320, 480, 768 Responsive Menu
 
