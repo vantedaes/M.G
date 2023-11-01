@@ -23,13 +23,23 @@ $('#bottom-text-input-id').addEventListener('input', (e) => {
 //no-upper-text  = > no upper text checkbox
 //no-bottom-text = > no-bottom-text
 
-  $('.no-upper-text').addEventListener('click', () => {
+  $('.no-upper-text').addEventListener('input', (e) => {
+    if(e.target.checked){
     $('.top-text').style.visibility = "hidden"
+   }else{
+    $('.top-text').style.visibility = 'visible'
+   }
 })
 
-$('.no-bottom-text').addEventListener('click', () => {
+
+$('.no-bottom-text').addEventListener('click', (e) => {
+    if(e.target.checked){
     $('.bottom-text').style.visibility = "hidden"
+    }else{
+        $('.bottom-text').style.visibility = 'visible'
+    }
 })
+
 
 
 // Fonts options
@@ -104,12 +114,20 @@ $('.drop-down-fonts-menu').addEventListener('input', (e) => {
 
     // no background checkbox
 
-    $('.clear-background').addEventListener('click', (e) => {
+    $('.clear-background').addEventListener('input', (e) => {
+        if(e.target.checked){
         $('.top-text').style.backgroundColor = "transparent"
+      }else{
+        $('.top-text').style.backgroundColor = "white"
+      }
     })
 
-    $('.clear-background').addEventListener('click', (e) => {
+    $('.clear-background').addEventListener('input', (e) => {
+        if(e.target.checked){
         $('.bottom-text').style.backgroundColor = "transparent"
+      }else{
+        $('.bottom-text').style.backgroundColor = "white"
+      }
     })
 
     // Fonts outline => light
@@ -233,41 +251,22 @@ $('.picture-background-color-input').addEventListener('input', (e) =>{
 
  // Filters, sliders 
 
- $('.brightness').addEventListener('input', (e) => {
-    $('.meme-picture').style.filter = `brightness(${e.target.value})`
- })
 
- $('.opacity').addEventListener('input', (e) => {
-    $('.meme-picture').style.filter = `opacity(${e.target.value})`
- })
+ const filtersMix = () => {
+    $(".meme-picture").style.filter = `brightness(${$(".brightness").value}) opacity(${$(".opacity").value}) contrast(${$('.contrast').value}%) blur(${$('.blur').value}px) grayscale(${$('.grayscale').value}%) sepia(${$('.sepia').value}%) hue-rotate(${$('.hue-rotation').value}deg) saturate${$('.saturation').value}%) invert(${$('.negative').value})`
+ }
 
- $('.contrast').addEventListener('input', (e) => {
-    $('.meme-picture').style.filter = `contrast(${e.target.value}%)`
- })
+ $(".brightness").addEventListener("input", filtersMix)
+ $(".opacity").addEventListener("input", filtersMix)
+ $(".contrast").addEventListener("input", filtersMix)
+ $(".blur").addEventListener("input", filtersMix)
+ $(".grayscale").addEventListener("input", filtersMix)
+ $(".sepia").addEventListener("input", filtersMix)
+ $(".hue-rotation").addEventListener("input", filtersMix)
+ $(".saturation").addEventListener("input", filtersMix)
+ $(".negative").addEventListener("input", filtersMix)
 
- $('.blur').addEventListener('input', (e) => {
-    $('.meme-picture').style.filter = `blur(${e.target.value}px)`
- })
 
- $('.grayscale').addEventListener('input', (e) => {
-    $('.meme-picture').style.filter = `grayscale(${e.target.value}%)`
- })
-
- $('.sepia').addEventListener('input', (e) => {
-    $('.meme-picture').style.filter = `sepia(${e.target.value}%)`
- })
-
- $('.hue-rotation').addEventListener('input', (e) => {
-    $('.meme-picture').style.filter = `hue-rotate(${e.target.value}deg)`
- })
-
- $('.saturation').addEventListener('input', (e) => {
-    $('.meme-picture').style.filter = `saturate(${e.target.value}%)`
- })
-
- $('.negative').addEventListener('input', (e) => {
-    $('.meme-picture').style.filter = `invert(${e.target.value})`
- })
 
  $(`.reset-button`).addEventListener('click', (e) => {
     $('.meme-picture').style.filter = 'none'
