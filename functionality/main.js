@@ -253,7 +253,7 @@ $('.picture-background-color-input').addEventListener('input', (e) =>{
 
 
  const filtersMix = () => {
-    $(".meme-picture").style.filter = `brightness(${$(".brightness").value}) opacity(${$(".opacity").value}) contrast(${$('.contrast').value}%) blur(${$('.blur').value}px) grayscale(${$('.grayscale').value}%) sepia(${$('.sepia').value}%) hue-rotate(${$('.hue-rotation').value}deg) saturate${$('.saturation').value}%) invert(${$('.negative').value})`
+    $(".meme-picture").style.filter = `brightness(${$(".brightness").value}) opacity(${$(".opacity").value}) contrast(${$('.contrast').value}%) blur(${$('.blur').value}px) grayscale(${$('.grayscale').value}%) sepia(${$('.sepia').value}%) hue-rotation(${$('.hue-rotation').value}deg) saturation${$('.saturation').value}%) invert(${$('.negative').value})`
  }
 
  $(".brightness").addEventListener("input", filtersMix)
