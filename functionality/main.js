@@ -6,7 +6,7 @@ document.querySelector('.light-mode').addEventListener('click', () => {
     document.body.classList.toggle('light-theme')
 })
 
-// Form Values pratices :p 
+// Form Values 
 
 const $ = (selector) => document.querySelector(selector) 
 
@@ -46,10 +46,7 @@ $('.no-bottom-text').addEventListener('click', (e) => {
 
 $('.drop-down-fonts-menu').addEventListener('input', (e) => {
     $('.top-text').style.fontFamily = e.target.value
-    })
-
-    $('.drop-down-fonts-menu').addEventListener('input', (e) => {
-        $('.bottom-text').style.fontFamily = e.target.value
+    $('.bottom-text').style.fontFamily = e.target.value
     })
 
 
@@ -57,19 +54,13 @@ $('.drop-down-fonts-menu').addEventListener('input', (e) => {
 
      $('.font-sizes').addEventListener('input', (e) => {
          $('.top-text').style.fontSize = `${e.target.value}px`
+         $('.bottom-text').style.fontSize = `${e.target.value}px`
      })
-
-     $('.font-sizes').addEventListener('input', (e) => {
-        $('.bottom-text').style.fontSize = `${e.target.value}px`
-    })
 
     // Font color and font background color
 
     $('.font-color').addEventListener('input', (e) => {
         $('.top-text').style.color = e.target.value
-    })
-
-    $('.font-color').addEventListener('input', (e) => {
         $('.bottom-text').style.color = e.target.value
     })
 
@@ -79,36 +70,25 @@ $('.drop-down-fonts-menu').addEventListener('input', (e) => {
 
     $('.left-align-button').addEventListener('click', (e) => {
         $('.top-text').style.textAlign = 'left'
-    })
-
-    $('.left-align-button').addEventListener('click', (e) => {
         $('.bottom-text').style.textAlign = 'left'
     })
 
     $('.justify-align-button').addEventListener('click', (e) => {
         $('.top-text').style.textAlign = 'center'
-    })
-
-    $('.justify-align-button').addEventListener('click', (e) => {
         $('.bottom-text').style.textAlign = 'center'
     })
 
     $('.right-align-button').addEventListener('click', (e) => {
         $('.top-text').style.textAlign = 'right'
-    })
-
-    $('.right-align-button').addEventListener('click', (e) => {
         $('.bottom-text').style.textAlign = 'right'
     })
+
 
 
     // font backgrounColor
 
     $('.background-text-color').addEventListener('input', (e) => {
         $('.top-text').style.backgroundColor = e.target.value
-    })
-
-    $('.background-text-color').addEventListener('input', (e) => {
         $('.bottom-text').style.backgroundColor = e.target.value
     })
 
@@ -117,26 +97,18 @@ $('.drop-down-fonts-menu').addEventListener('input', (e) => {
     $('.clear-background').addEventListener('input', (e) => {
         if(e.target.checked){
         $('.top-text').style.backgroundColor = "transparent"
-      }else{
-        $('.top-text').style.backgroundColor = "white"
-      }
-    })
-
-    $('.clear-background').addEventListener('input', (e) => {
-        if(e.target.checked){
         $('.bottom-text').style.backgroundColor = "transparent"
       }else{
+        $('.top-text').style.backgroundColor = "white"
         $('.bottom-text').style.backgroundColor = "white"
       }
     })
+
 
     // Fonts outline => light
 
     $('.light-outline-button').addEventListener('click', (e) => {
         $('.bottom-text').style.webkitTextStroke = '1px white'
-    })
-
-    $('.light-outline-button').addEventListener('click', (e) => {
         $('.top-text').style.webkitTextStroke = '1px white'
     })
 
@@ -144,9 +116,6 @@ $('.drop-down-fonts-menu').addEventListener('input', (e) => {
 
     $('.dark-outline-button').addEventListener('click', (e) => {
         $('.bottom-text').style.webkitTextStroke = '1px black'
-    })
-
-    $('.dark-outline-button').addEventListener('click', (e) => {
         $('.top-text').style.webkitTextStroke = '1px black'
     })
 
@@ -154,27 +123,21 @@ $('.drop-down-fonts-menu').addEventListener('input', (e) => {
 
      $('.None-outline-button').addEventListener('click', (e) => {
         $('.top-text').style.webkitTextStroke = '0'
-    })
-
-    $('.None-outline-button').addEventListener('click', (e) => {
         $('.bottom-text').style.webkitTextStroke = '0'
     })
-
 
     // Fonts padding 
 
      $('.padding-input').addEventListener('input', (e) => {
          $('.top-text').style.padding = `${e.target.value}px`
+         $('.bottom-text').style.padding = `${e.target.value}px`
      })
-
-     $('.padding-input').addEventListener('input', (e) => {
-        $('.bottom-text').style.padding = `${e.target.value}px`
-    })
 
    // Line Height
 
    $('.line-spacing').addEventListener('input', (e) => {
     $('.top-text').style.lineHeight = e.target.value
+    $('.bottom-text').style.lineHeight = e.target.value
    })
 
 
@@ -253,8 +216,9 @@ $('.picture-background-color-input').addEventListener('input', (e) =>{
 
 
  const filtersMix = () => {
-    $(".meme-picture").style.filter = `brightness(${$(".brightness").value}) opacity(${$(".opacity").value}) contrast(${$('.contrast').value}%) blur(${$('.blur').value}px) grayscale(${$('.grayscale').value}%) sepia(${$('.sepia').value}%) hue-rotation(${$('.hue-rotation').value}deg) saturation${$('.saturation').value}%) invert(${$('.negative').value})`
+     $(".meme-picture").style.filter = `brightness(${$(".brightness").value}) opacity(${$(".opacity").value}) contrast(${$('.contrast').value}%) blur(${$('.blur').value}px) grayscale(${$('.grayscale').value}%) sepia(${$('.sepia').value}%) hue-rotate(${$('.hue-rotation').value}deg) saturate(${$('.saturation').value}%) invert(${$('.negative').value})`
  }
+
 
  $(".brightness").addEventListener("input", filtersMix)
  $(".opacity").addEventListener("input", filtersMix)
@@ -267,6 +231,8 @@ $('.picture-background-color-input').addEventListener('input', (e) =>{
  $(".negative").addEventListener("input", filtersMix)
 
 
+
+ // RESET BUTTON
 
  $(`.reset-button`).addEventListener('click', (e) => {
     $('.meme-picture').style.filter = 'none'
